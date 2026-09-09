@@ -163,6 +163,29 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700;font-
 .price-card .btn{margin-top:10px;width:100%}
 .pricing__hint{text-align:center;color:var(--text-soft);margin-top:28px;font-size:.9rem}
 
+/* promo carousel */
+.promo{padding:0;background:var(--paper)}
+.promo__carousel{position:relative;width:100%;overflow:hidden}
+.promo__track{display:flex;width:100%;transition:transform .4s ease}
+.promo__slide{flex:0 0 100%;width:100%}
+.promo__slide img{width:100%;height:auto;display:block}
+.promo__arrow{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:5;
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(255,255,255,.85);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 16px -6px rgba(0,0,0,.35);transition:background .15s ease;
+}
+.promo__arrow:hover{background:var(--paper)}
+.promo__arrow--prev{left:16px}
+.promo__arrow--next{right:16px}
+.promo__dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5}
+.promo__dot{width:9px;height:9px;border-radius:50%;border:none;background:rgba(255,255,255,.6);cursor:pointer;padding:0}
+.promo__dot.is-active{background:var(--paper);box-shadow:0 0 0 2px var(--ink)}
+@media (max-width:640px){
+  .promo__arrow{width:36px;height:36px}
+}
+
 /* location */
 .location{padding:72px 0}
 .location__inner{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:stretch}
