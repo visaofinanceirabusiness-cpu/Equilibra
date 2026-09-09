@@ -112,7 +112,6 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700}
 .hero__badge{
   position:relative;width:min(100%,340px);aspect-ratio:1;border-radius:32px;overflow:hidden;
   box-shadow:0 20px 44px -16px rgba(14,47,42,.45);
-  transform:rotate(-2deg);
 }
 .hero__logo{width:100%;height:100%;object-fit:cover}
 
@@ -132,7 +131,7 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700}
   border:1px solid rgba(18,56,50,.06);
   transition:transform .2s ease, box-shadow .2s ease;
 }
-.service-card:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 20px 34px -16px rgba(18,56,50,.28)}
+.service-card:hover{transform:translateY(-6px);box-shadow:0 20px 34px -16px rgba(18,56,50,.28)}
 .service-card__icon{
   width:76px;height:76px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;
   position:relative;border-radius:50%;
@@ -140,9 +139,7 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700}
   transition:transform .2s ease;
 }
 .service-card__icon img{width:100%;height:100%;border-radius:50%;object-fit:cover}
-.services__grid .service-card:nth-child(2n) .service-card__icon{transform:rotate(-4deg)}
-.services__grid .service-card:nth-child(2n+1) .service-card__icon{transform:rotate(3deg)}
-.service-card:hover .service-card__icon{transform:rotate(0deg) scale(1.05)}
+.service-card:hover .service-card__icon{transform:scale(1.05)}
 .service-card h3{font-size:1.02rem;margin-bottom:8px;letter-spacing:-.005em}
 .service-card p{color:var(--text-soft);font-size:.88rem;margin:0}
 
