@@ -194,6 +194,42 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700;font-
 .location__map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:280px}
 .location__map iframe{width:100%;height:100%;border:0;min-height:280px}
 
+/* benefits */
+.benefits{padding:80px 0;background:var(--mint-soft)}
+.benefits__intro{max-width:640px;margin:0 auto 44px;text-align:center;color:var(--text-soft);font-size:1.02rem}
+.benefits__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:56px}
+.benefit{
+  background:var(--paper);border-radius:18px;padding:26px 24px;
+  box-shadow:0 4px 16px -10px rgba(18,56,50,.2);border:1px solid rgba(18,56,50,.06);
+}
+.benefit--wide{grid-column:span 1}
+.benefit__emoji{font-size:1.7rem;display:block;margin-bottom:12px}
+.benefit h3{font-size:1rem;margin-bottom:6px}
+.benefit p{color:var(--text-soft);font-size:.88rem;margin:0}
+.benefits__equilibra{
+  max-width:720px;margin:0 auto;text-align:center;background:var(--paper);
+  border-radius:24px;padding:44px 36px;box-shadow:0 10px 30px -18px rgba(18,56,50,.3);
+}
+.benefits__equilibra h3{font-size:1.4rem;margin-bottom:14px}
+.benefits__equilibra > p{color:var(--text-soft)}
+.benefits__tags{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0 28px;
+}
+.benefits__tags span{
+  background:var(--mint-soft);color:var(--ink);font-size:.82rem;font-weight:600;
+  padding:7px 16px;border-radius:999px;
+}
+.benefits__closing{margin:0;padding-top:22px;border-top:1px solid rgba(18,56,50,.1)}
+.benefits__closing strong{display:block;color:var(--ink);font-size:1.05rem;margin-bottom:6px}
+.benefits__closing .script{font-size:1.5rem}
+@media (max-width:900px){
+  .benefits__grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .benefits__grid{grid-template-columns:1fr}
+  .benefits__equilibra{padding:32px 22px}
+}
+
 /* final cta */
 .cta-final{background:linear-gradient(135deg,var(--ink) 0%, var(--ink-soft) 100%);color:var(--paper);padding:70px 0;text-align:center}
 .cta-final h2{color:var(--paper);font-size:clamp(1.5rem,3vw,2.1rem)}
