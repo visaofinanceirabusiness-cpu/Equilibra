@@ -1,20 +1,20 @@
 :root{
-  --ink:#123832;
-  --ink-soft:#1f5148;
-  --coral:#dd8f96;
-  --coral-dark:#c96f78;
-  --mint:#cfe0cb;
-  --mint-soft:#eaf3ee;
-  --teal-300:#a3dde0;
-  --teal-500:#63c2c9;
-  --teal-700:#2a9199;
-  --teal-soft:#e2f3f2;
-  --cream:#faf7f1;
+  --ink:#0e2f2a;
+  --ink-soft:#155248;
+  --coral:#ef5f78;
+  --coral-dark:#d63d5c;
+  --mint:#3fc99a;
+  --mint-soft:#d8f5e7;
+  --teal-300:#4fd6d9;
+  --teal-500:#0fb5bd;
+  --teal-700:#0a7f8c;
+  --teal-soft:#d3f4f3;
+  --cream:#fff8f0;
   --paper:#ffffff;
-  --text:#25332f;
-  --text-soft:#5a6b65;
+  --text:#1a2b26;
+  --text-soft:#48605a;
   --radius:16px;
-  --shadow:0 10px 30px -12px rgba(18,56,50,.25);
+  --shadow:0 10px 30px -12px rgba(14,47,42,.35);
   color-scheme: light;
 }
 
@@ -72,6 +72,7 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(18,56,50,.08)}
 .header__inner{display:flex;align-items:center;gap:24px;padding-top:14px;padding-bottom:14px}
 .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
+.brand__mark{border-radius:50%;object-fit:cover;flex-shrink:0}
 .brand__text{display:flex;flex-direction:column;line-height:1.1}
 .brand__text strong{font-size:1.25rem;color:var(--ink);letter-spacing:.01em}
 .brand__text em{font-style:normal;font-size:.68rem;color:var(--text-soft);letter-spacing:.06em;text-transform:uppercase}
@@ -96,17 +97,11 @@ h1,h2,h3{color:var(--ink);margin:0 0 .5em;line-height:1.15;font-weight:700}
 .hero__actions{display:flex;gap:14px;flex-wrap:wrap}
 .hero__art{position:relative;display:flex;align-items:center;justify-content:center;min-height:280px}
 .hero__badge{
-  position:relative;width:min(100%,320px);aspect-ratio:1;border-radius:32px;overflow:hidden;
-  display:flex;align-items:center;justify-content:center;padding:20%;
-  box-shadow:var(--shadow);
-  background:
-    radial-gradient(circle at 22% 18%, rgba(255,255,255,.4) 0%, transparent 38%),
-    radial-gradient(circle at 78% 30%, rgba(255,255,255,.22) 0%, transparent 40%),
-    radial-gradient(circle at 65% 78%, var(--mint) 0%, transparent 50%),
-    radial-gradient(circle at 20% 75%, var(--coral) 0%, transparent 45%),
-    linear-gradient(150deg, var(--teal-300) 0%, var(--teal-500) 55%, var(--teal-700) 100%);
+  position:relative;width:min(100%,340px);aspect-ratio:1;border-radius:32px;overflow:hidden;
+  box-shadow:0 20px 44px -16px rgba(14,47,42,.45);
+  transform:rotate(-2deg);
 }
-.hero__logo{width:100%;position:relative;filter:drop-shadow(0 10px 16px rgba(18,56,50,.2))}
+.hero__logo{width:100%;height:100%;object-fit:cover}
 
 /* relief strip */
 .relief{background:var(--ink);color:var(--mint-soft);padding:34px 0}
